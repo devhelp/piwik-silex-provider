@@ -1,0 +1,39 @@
+{
+    "name": "devhelp/piwik-silex-provider",
+    "description": "integration of devhelp/piwik-api into Silex. Allows to create services for piwik api methods",
+    "keywords": ["piwik"],
+    "homepage": "http://devhelp.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paweł Barański",
+            "email": "pawel.baranski1@gmail.com"
+        },
+        {
+            "name":  "devhelp.pl",
+            "email": "devhelp@devhelp.pl"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "silex/silex": "1.*",
+        "devhelp/piwik-api": ">=0.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "squizlabs/php_codesniffer": "2.*"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devhelp\\Silex\\Piwik\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Devhelp\\Silex\\Piwik\\": "tests/"
+        }
+    }
+}
