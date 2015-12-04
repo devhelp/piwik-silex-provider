@@ -1,12 +1,12 @@
-[![Build Status](https://travis-ci.org/devhelp/piwik-api-provider.svg?branch=master)](https://travis-ci.org/devhelp/piwik-api-provider)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/devhelp/piwik-api-provider/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/devhelp/piwik-api-provider?branch=master)
+[![Build Status](https://travis-ci.org/devhelp/piwik-silex-provider.svg?branch=master)](https://travis-ci.org/devhelp/piwik-silex-provider)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/devhelp/piwik-silex-provider/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/devhelp/piwik-silex-provider?branch=master)
 
 ## Installation
 
 For more information please check [composer website](http://getcomposer.org).
 
 ```
-$ composer require 'devhelp/piwik-api-provider:dev-master'
+$ composer require 'devhelp/piwik-silex-provider:dev-master'
 ```
 
 ## Purpose
@@ -21,7 +21,7 @@ It uses [devhelp/piwik-api](http://github.com/devhelp/piwik-api) library - check
 ```php
 $app = new Silex\Application();
 
-$app->register(new Devhelp\Silex\ServiceProvider\Piwik\PiwikApiServiceProvider(array(
+$app->register(new Devhelp\Silex\Piwik\PiwikApiServiceProvider(array(
     'client' => 'my_piwik.client',
     'api' => array(
         'reader' => array(
@@ -96,7 +96,7 @@ at runtime. For example have a service that would return `token_auth` of logged 
 ```php
 $app = new Silex\Application();
 
-$app->register(new Devhelp\Silex\ServiceProvider\Piwik\PiwikApiServiceProvider(array(
+$app->register(new Devhelp\Silex\Piwik\PiwikApiServiceProvider(array(
     'client' => 'my_piwik.client',
     'api' => array(
         'reader' => array(
