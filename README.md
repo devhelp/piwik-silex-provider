@@ -9,6 +9,10 @@ For more information please check [composer website](http://getcomposer.org).
 $ composer require 'devhelp/piwik-silex-provider:dev-master'
 ```
 
+## Sandbox
+
+Working example can be found at [devhelp/piwik-silex-provider-sandbox](http://github.com/devhelp/piwik-silex-provider-sandbox)
+
 ## Purpose
 
 Provides integration of [Piwik API](http://developer.piwik.org/api-reference/reporting-api) into [Silex](http://silex.sensiolabs.org). Adds services to the dependency injection container that allows to use Piwik API methods as services.
