@@ -95,7 +95,7 @@ class PiwikApiServiceProvider implements ServiceProviderInterface
              * resolve params to container services if applicable
              */
             foreach ($config['default_params'] as $param => $value) {
-                $value = isset($this->app[$value]) ? $this->app[$value] : $value;
+                $value = isset($app[$value]) ? $app[$value] : $value;
                 $defaultParams[$param] = $value;
             }
 
