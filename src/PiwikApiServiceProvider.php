@@ -45,7 +45,6 @@ class PiwikApiServiceProvider implements ServiceProviderInterface
 
     public function register(Application $app)
     {
-
     }
 
     public function boot(Application $app)
